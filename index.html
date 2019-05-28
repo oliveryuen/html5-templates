@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function handleButtonClicked() {
+                var button1 = document.getElementById('button1');
+                button1.addEventListener(handleUploadButton, false);
+                button1.click();
+            }
+            function handleUploadButton(e) {
+                alert('button1 clicked!');
+            }
+        </script>
+        <input id="file1" type="file" style="display: none;" />
+        <input id="button1" type="button" onclick="handleButtonClicked();" value="Button 1" />
+    </body>
+</html>
